@@ -3,7 +3,7 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname=perl-net-http
 pkgver=6.24
-pkgrel=${pkgrel:-0}
+pkgrel=0
 #_pkgreal is used by apkbuild-cpan to find modules at MetaCpan
 _pkgreal=Net-HTTP
 pkgdesc="Low-level HTTP connection (client)"
@@ -35,7 +35,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 db34ff12b5782c213c35e500f8b6de1f11887b514fdb43e3a2ab6eeeb04917a66171a41ea548d04a4d62a2963eb09e5ec98a9ce614d94f7ae67674f0aeae8afd  Net-HTTP-6.24.tar.gz
 "
